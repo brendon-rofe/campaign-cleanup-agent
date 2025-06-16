@@ -18,6 +18,7 @@ lib/
 Scripts/
 pyvenv.cfg
 lib64/
+credentials.json
 parts/
 sdist/
 var/
