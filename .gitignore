@@ -21,6 +21,7 @@ lib64/
 credentials.json
 Include/
 parts/
+token.json
 sdist/
 var/
 wheels/
