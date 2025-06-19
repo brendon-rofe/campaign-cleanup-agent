@@ -20,6 +20,7 @@ pyvenv.cfg
 lib64/
 credentials.json
 Include/
+requirements.txt
 parts/
 token.json
 sdist/
