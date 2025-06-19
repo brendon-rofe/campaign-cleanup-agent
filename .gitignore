@@ -17,7 +17,8 @@ eggs/
 lib/
 Scripts/
 pyvenv.cfg
-google_creds.json
+client_secrets.json
+google_token.json
 lib64/
 credentials.json
 Include/
