@@ -13,12 +13,9 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-flow = InstalledAppFlow.from_client_secrets_file("client_secrets.json", SCOPES)
-creds = flow.run_local_server(port=0)
-
-# Save token
-with open("google_token.json", "w") as token_file:
-    token_file.write(creds.to_json())
+with open("google_token.json") as token_file:
+    creds_data = json.load(token_file)
+creds = Credentials.from_authorized_user_info(creds_data, SCOPES)
 
 gc = gspread.authorize(creds)
 
